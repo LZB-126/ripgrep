@@ -30,23 +30,7 @@ you give it. ripgrep behaves as if reading each file line by line. If a line
 matches the pattern provided to ripgrep, then that line will be printed. If a
 line does not match the pattern, then the line is not printed.
 
-The best way to see how this works is with an example. To show an example, we
-need something to search. Let's try searching ripgrep's source code. First
-grab a ripgrep source archive from
-https://github.com/BurntSushi/ripgrep/archive/0.7.1.zip
-and extract it:
-
-```
-$ curl -LO https://github.com/BurntSushi/ripgrep/archive/0.7.1.zip
-$ unzip 0.7.1.zip
-$ cd ripgrep-0.7.1
-$ ls
-benchsuite  grep       tests         Cargo.toml       LICENSE-MIT
-ci          ignore     wincolor      CHANGELOG.md     README.md
-complete    pkg        appveyor.yml  compile          snapcraft.yaml
-doc         src        build.rs      COPYING          UNLICENSE
-globset     termcolor  Cargo.lock    HomebrewFormula
-```
+The best way to see how this works is with an example. 
 
 Let's try our first search by looking for all occurrences of the word `fast`
 in `README.md`:
